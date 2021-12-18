@@ -9,8 +9,8 @@ using curso.api.Infraestruture.Data;
 namespace curso.api.Migrations
 {
     [DbContext(typeof(ContextDb))]
-    [Migration("20211217125414_Base-Inicial")]
-    partial class BaseInicial
+    [Migration("20211218122247_Base-Initial")]
+    partial class BaseInitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

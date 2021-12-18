@@ -65,7 +65,7 @@ namespace curso.api.Controllers
         public IActionResult Registrar(RegistroViewModelInput registroViewModelInput)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ContextDb>();
-            optionsBuilder.UseSqlServer("Server=(localdb)mssqllocaldb;Database=CURSO;Integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=CURSO;Integrated Security=true");
 
             ContextDb context = new ContextDb(optionsBuilder.Options);
 

@@ -9,11 +9,6 @@ namespace curso.api.Infraestruture.Data
 {
     public class ContextDb : DbContext
     {
-
-        public DbSet<Usuario> Usuario { get; set; }
-
-        public DbSet<Curso> Curso { get; set; }
-
         public ContextDb(DbContextOptions<ContextDb> options) :base(options)
         {
 
@@ -26,5 +21,9 @@ namespace curso.api.Infraestruture.Data
 
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<Usuario> Usuario { get; set; }
+
+        public DbSet<Curso> Curso { get; set; }
     }
 }

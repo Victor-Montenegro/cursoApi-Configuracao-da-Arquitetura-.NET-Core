@@ -11,6 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20211217125414_Base-Inicial.cs" />
+    <Compile Remove="Migrations\20211217125414_Base-Inicial.Designer.cs" />
+    <Compile Remove="Migrations\20211218120802_base-initial2.cs" />
+    <Compile Remove="Migrations\20211218120802_base-initial2.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
